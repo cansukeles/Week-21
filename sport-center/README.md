@@ -39,3 +39,9 @@ Use our BMI Calculator to assess your body mass index quickly. Input your height
 Our landing page is thoughtfully designed to ensure a seamless experience on both desktop and mobile devices. The layout adjusts dynamically to different screen sizes, providing you with a user-friendly interface no matter how you access our site.
 
 We hope you enjoy exploring our Sport Center website. Whether you're a seasoned athlete or just starting your fitness journey, we have something for everyone. Join our community and embark on a path to a healthier, more active lifestyle.
+
+
+
+
+https://github.com/cansukeles/Week-21/assets/142833559/eac8777a-b3c4-47e4-bb8a-6f182dc9bc2c
+
