@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Center</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="sticky-top = 0 transition-all w-full absolute top-0 m-0 z-50"
+    >
+      <nav class="py-1 w-full mx-0 px-60 sticky nav-sticky max-sm:h-24">
+        <div class="flex justify-between sm:items-center">
+          <!--Logo-->
+          <div class="sm:relative sm:pl-0 logo-mobile">
+            <img src="img/logo.png" class="w-64 sm:w-48" alt="" />
+          </div>
+          <!--Menu İtems-->
+          <div id="nav-items-id" class="nav-items hidden sm:flex">
+            <a href="#home">Home</a>
+            <button onclick="scrollToSection(`classes`)">Classes</button>
+            <button onclick="scrollToSection(`trainer`)">Trainer</button>
+            <button onclick="scrollToSection(`review`)">Review</button>
+            <button onclick="scrollToSection(`contact`)">Contact</button>
+            <button class="justify-start">
+              <!--Button-->
+              <a href="#" class="bg-orange p-1 rounded-sm hover:bg-brightorange"
+                >JOIN US</a
+              >
+            </button>
+          </div>
+          <div
+            class="space-y-2 sm:hidden absolute hamburger"
+            onclick="openHamburgerMenu()"
+          >
+            <span class="block w-10 h-1.5 bg-white rounded"></span>
+            <span class="block w-10 h-1.5 bg-white rounded"></span>
+            <span class="block w-10 h-1.5 bg-white rounded"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Home Section Start-->
+    <section id="home" class="section-home">
+      <img
+        src="img/hero-man.jpg"
+        alt="hero-man"
+        class="w-full home-image object-cover"
+      />
+      <div
+        class="heading-container absolute flex justify-center items-center w-full px-10 sm:px-60 mt-20 sm:mt-0"
+      >
+        <div class="flex flex-col space-y-3 w-full">
+          <h2
+            class="p-1 px-2 pt-1 max-w-min font-bold text-left text-white rounded-sm self-baseline bg-lightblue h1-text-shadow"
+          >
+            POWERFUL
+          </h2>
+          <div class="flex sm:flex-col gap-4 sm:gap-0">
+            <h1
+              class="max-w-md text-6xl sm:text-7xl font-bold md:text-7xl text-left text-white h1-text-shadow"
+            >
+              Group
+            </h1>
+            <h1
+              class="max-w-md text-6xl sm:text-7xl font-bold md:text-7xl text-left text-white h1-text-shadow"
+            >
+              Practice
+            </h1>
+          </div>
+
+          <h1
+            class="max-w-md text-6xl sm:text-7xl font-bold md:text-7xl text-left text-white h1-text-shadow"
+          >
+            With Trainer
+          </h1>
+          <div class="p-div-bg px-4 py-1">
+            <p
+              class="text-lg sm:text-2xl text-white font-bold text-left opacity-100 leading-9 font-poppins"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum
+              laboriosam doloribus nesciunt, ipsum tempora beatae, ducimus
+              dignissimos ab officiis facere iusto dolorum, tempore officia ex
+              culpa perspiciatis aliquid blanditiis?
+            </p>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-10 md:justify-start"
+          >
+            <a
+              href="#"
+              class="p-2 px-6 pt-2 text-white text-xl bg-lightblue border-2 border-lightblue rounded-sm font-bold baseline hover:bg-brightRedLight"
+              >Sign Up</a
+            >
+            <a
+              href="#"
+              class="p-2 px-6 pt-2 text-white text-xl border-2 rounded-sm font-bold baseline hover:bg-brightRedLight"
+              >Details</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-homecolor home-info px-60 py-7 flex items-center justify-between flex-col sm:flex-row max-sm:gap-4"
+    >
+      <div class="info-box max-sm:w-64 max-sm:h-32">
+        <p class="text-lightblue text-2xl font-black">325</p>
+        <p class="text-black text-xl font-black">Courses</p>
+      </div>
+      <div class="info-box max-sm:w-64 max-sm:h-32">
+        <p class="text-lightblue text-2xl font-black">405</p>
+        <p class="text-black text-xl font-black">Work Outs</p>
+      </div>
+      <div class="info-box max-sm:w-64 max-sm:h-32">
+        <p class="text-lightblue text-2xl font-black">305</p>
+        <p class="text-black text-xl font-black">Working Hours</p>
+      </div>
+      <div class="info-box max-sm:w-64 max-sm:h-32">
+        <p class="text-lightblue text-2xl font-black">705</p>
+        <p class="text-black text-xl font-black">Happy Clients</p>
+      </div>
+    </section>
+    <!--Home Section End-->
+
+    <!--Classes Section Start-->
+    <section id="classes" class="section-classes">
+      <section class="container mx-auto pt-10 pb-5 flex justify-center">
+        <h1 class="font-black text-2xl text-navcolor">OUR CLASSES</h1>
+      </section>
+      <div class="m-auto bg-orange p-1 rounded-sm w-16"></div>
+      <div class="flex justify-center pt-6 pb-4">
+        <p
+          class="font-semibold sm:text-sm text-lg text-center text-gray-700 lorem-text max-sm:w-72"
+        >
+          Lorem ipsum is not simpley random text. It has roots in a piece of
+          classical at Hampden-Sydney Collage.
+        </p>
+      </div>
+      <section>
+        <div
+          id="features"
+          class="container mx-auto grid grid-cols-4 px-10 sm:px-60 py-7 justify-between text-white font-black items-start justify-items-center"
+        >
+          <div class="w-28 mt-1">
+            <button
+              id="yoga"
+              class="bg-navcolor px-4 py-2 rounded-md hover:bg-orange w-full bg-orange"
+            >
+              Yoga
+            </button>
+            <div
+              id="yoga-arrow"
+              class="h-0 w-0 border-x-8 border-x-transparent border-b-[8px] rotate-180 border-b-orange m-auto"
+            ></div>
+          </div>
+          <div class="w-28 mt-1">
+            <button
+              id="group"
+              class="bg-navcolor w-full px-4 py-2 rounded-md hover:bg-orange"
+            >
+              Group
+            </button>
+            <div
+              id="group-arrow"
+              class="h-0 w-0 border-x-8 border-x-transparent border-b-[8px] rotate-180 border-b-orange m-auto hidden"
+            ></div>
+          </div>
+
+          <div class="w-28 mt-1">
+            <button
+              id="solo"
+              class="bg-navcolor w-full px-4 py-2 rounded-md hover:bg-orange"
+            >
+              Solo
+            </button>
+            <div
+              id="solo-arrow"
+              class="h-0 w-0 border-x-8 border-x-transparent border-b-[8px] rotate-180 border-b-orange m-auto hidden"
+            ></div>
+          </div>
+
+          <div class="w-28 mt-1">
+            <button
+              id="stretching"
+              class="bg-navcolor w-full px-4 py-2 rounded-md hover:bg-orange"
+            >
+              Stretching
+            </button>
+            <div
+              id="stretching-arrow"
+              class="h-0 w-0 border-x-8 border-x-transparent border-b-[8px] rotate-180 border-b-orange m-auto hidden"
+            ></div>
+          </div>
+        </div>
+        <div
+          id="features-content"
+          class="flex container mx-auto gap-10 py-6 px-10 sm:px-60 flex-col sm:flex-row"
+        >
+          <div class="flex flex-col justify-start gap-5">
+            <h2 class="text-5xl sm:text-xl font-bold text-gray-700">
+              Why are Your Yoga?
+            </h2>
+            <p class="text-2xl sm:text-sm font-bold text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              assumenda quibusdam adipisci itaque temporibus labore praesentium
+              sed consequuntur sit, rem officia fugiat reiciendis tenetur
+              accusantium atque voluptates? Omnis, odit consequuntur!
+            </p>
+            <div id="features-inner-content">
+              <h2 class="text-5xl sm:text-xl font-bold text-gray-700 py-6">
+                When comes Yoga Your Time.
+              </h2>
+              <p class="text-2xl sm:text-sm font-bold text-gray-700">
+                Saturday-Sunday: 8:00am - 10:00am <br />
+                Monday-Tuesday: 10:00am - 12:00am <br />
+                Wednesday-Friday: 3:00pm - 6:00pm
+              </p>
+            </div>
+          </div>
+          <img src="img/yoga.jpg" class="sm:w-2/4" alt="Yoga Position" />
+        </div>
+      </section>
+    </section>
+
+    <div
+      class="flex flex-col sm:flex-row container mx-auto gap-10 py-6 px-10 sm:px-60"
+    >
+      <div
+        class="flex max-sm:items-center flex-col justify-center gap-5 sm:w-1/2"
+      >
+        <h1 class="text-5xl sm:text-2xl text-navcolor font-black">
+          BMI Calculator
+        </h1>
+
+        <p class="text-xl sm:text-sm font-bold text-gray-700">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old.
+        </p>
+        <p class="text-xl sm:text-sm font-bold text-gray-700">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old.
+        </p>
+        <!--BMI Calculator-->
+        <div class="flex container mx-auto max-sm:gap-10 py-6">
+          <form class="flex max-sm:w-full flex-col sm:flex-row gap-2 text-xs">
+            <div class="max-sm:w-1/2">
+              <input
+                id="height-input"
+                class="input max-sm:w-3/4 max-sm:h-6"
+                onkeypress="return onlyNumberKey(event)"
+                oninput="calculateBmi()"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="3"
+                placeholder=" Your Height "
+              />
+              cm
+            </div>
+            <div class="max-sm:w-1/2">
+              <input
+                id="weight-input"
+                class="input max-sm:w-3/4 max-sm:h-6"
+                onkeypress="return onlyNumberKey(event)"
+                oninput="calculateBmi()"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="3"
+                placeholder=" Your Weight "
+              />
+              kg
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="img-bmi-id" class="sm:w-1/2 flex justify-center flex-col">
+        <div class="flex justify-center">
+          <p class="max-sm:text-2xl font-semibold text-black">Your BMI</p>
+        </div>
+        <img src="img/bmi-index.jpg" class="w-full" alt="" />
+        <div
+          id="bmi-arrow-id"
+          class="relative h-0 w-0 border-x-8 border-x-transparent border-b-[16px] border-b-orange bmi-arrow"
+        ></div>
+      </div>
+    </div>
+
+    <!--Classes Section End-->
+
+    <!--Trainer Section Start-->
+    <section id="trainer" class="section-trainer">
+      <section class="container mx-auto pt-10 pb-5 flex justify-center">
+        <h1 class="font-black text-2xl text-navcolor">OUR BEST TRAINERS</h1>
+      </section>
+      <div class="m-auto bg-orange p-1 rounded-sm w-16"></div>
+      <div class="flex justify-center pt-6 pb-4">
+        <p
+          class="font-semibold sm:text-sm text-lg text-center text-gray-700 lorem-text max-sm:w-72"
+        >
+          Lorem ipsum is not simpley random text. It has roots in a piece of
+          classical at Hampden-Sydney Collage.
+        </p>
+      </div>
+      <div
+        class="container mx-auto flex flex-col sm:flex-row sm:px-60 py-7 justify-between max-sm:gap-10 items-center sm:items-start justify-items-center pb-10"
+      >
+        <div class="trainer">
+          <div class="trainer-border-div-x"></div>
+          <div class="trainer-border-div-y"></div>
+          <div class="trainer-card-front text-bold text-white text-center">
+            <h6 class="text-xl">Ebru Salli</h6>
+            <h5 class="text-xs">AnriGravity Fitness Trainer</h5>
+          </div>
+          <div class="trainer-card-behind"></div>
+          <img
+            src="img/trainer1.jpg"
+            class="w-full sm:w-52 z-20 relative rounded border border-orange"
+            alt="Trainer"
+          />
+        </div>
+        <div class="trainer">
+          <div class="trainer-border-div-x"></div>
+          <div class="trainer-border-div-y"></div>
+          <div class="trainer-card-front text-bold text-white text-center">
+            <h6 class="text-xl">Will Smith</h6>
+            <h5 class="text-xs">Fitness Coach</h5>
+          </div>
+          <div class="trainer-card-behind"></div>
+          <img
+            src="img/trainer2.jpg"
+            class="w-full sm:w-52 z-20 relative rounded border border-orange"
+            alt="Trainer"
+          />
+        </div>
+        <div class="trainer">
+          <div class="trainer-border-div-x"></div>
+          <div class="trainer-border-div-y"></div>
+          <div class="trainer-card-front text-bold text-white text-center">
+            <h6 class="text-xl">Jane Doe</h6>
+            <h5 class="text-xs">Cardio Trainer</h5>
+          </div>
+          <div class="trainer-card-behind"></div>
+          <img
+            src="img/trainer3.jpg"
+            class="w-full sm:w-52 z-20 relative rounded border border-orange"
+            alt="Trainer"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="purchase-section">
+      <section class="container mx-auto pt-10 pb-5 flex justify-center">
+        <h1 class="font-black text-2xl text-navcolor">PURCHASE FROM US</h1>
+      </section>
+      <div class="m-auto bg-orange p-1 rounded-sm w-16"></div>
+      <div class="flex justify-center pt-6 pb-4">
+        <p
+          class="font-semibold sm:text-sm text-lg text-center text-gray-700 lorem-text max-sm:w-72"
+        >
+          Lorem ipsum is not simpley random text. It has roots in a piece of
+          classical at Hampden-Sydney Collage.
+        </p>
+      </div>
+      <div
+        class="container mx-auto flex flex-col sm:flex-row sm:px-60 py-7 justify-center gap-5 sm:gap-1 items-start justify-items-center p-10"
+      >
+        <div class="card">
+          <img src="img/purchase1.jpg" alt="" />
+          <div class="card-content text-center font-semibold">
+            <p class="text-2xl sm:text-base font-semibold">Kettlebel / 5kg</p>
+            <p class="text-lg sm:text-xs"><strike>89,99$ </strike> / 59.99$</p>
+            <div class="pt-5 pb-1">
+              <div class="float-left ml-4">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <a href="#" class="text-sm sm:text-xs mr-4">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/purchase2.jpg" alt="" />
+          <div class="card-content text-center font-semibold">
+            <p class="text-2xl sm:text-base font-semibold">Treadmill</p>
+            <p class="text-lg sm:text-xs">
+              <strike>899,99$ </strike> / 599.99$
+            </p>
+            <div class="pt-5 pb-1">
+              <div class="float-left ml-4">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <a href="#" class="text-sm sm:text-xs mr-4">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/purchase3.jpg" alt="" />
+          <div class="card-content text-center font-semibold">
+            <p class="text-2xl sm:text-base font-semibold">
+              Adjustable Dumbbell
+            </p>
+            <p class="text-lg sm:text-xs"><strike>89,99$ </strike> / 59.99$</p>
+            <div class="pt-5 pb-1">
+              <div class="float-left ml-4">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <a href="#" class="text-sm sm:text-xs mr-4">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/purchase4.jpg" alt="" />
+          <div class="card-content text-center font-semibold">
+            <p class="text-2xl sm:text-base font-semibold">Kettlebel / 3kg</p>
+            <p class="text-lg sm:text-xs"><strike>89,99$ </strike> / 59.99$</p>
+            <div class="pt-5 pb-1">
+              <div class="float-left ml-4">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <a href="#" class="text-sm sm:text-xs mr-4">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Trainer Section End-->
+
+    <!--Review Section Start-->
+    <section id="review" class="section-review">
+      <section class="container mx-auto pt-10 pb-5 flex justify-center">
+        <h1 class="font-black text-2xl text-navcolor">REVIEW CLIENT</h1>
+      </section>
+      <div class="m-auto bg-orange p-1 rounded-sm w-16"></div>
+      <div class="flex justify-center pt-6 pb-4">
+        <p
+          class="font-semibold sm:text-sm text-lg text-center text-gray-700 lorem-text max-sm:w-72"
+        >
+          Lorem ipsum is not simpley random text. It has roots in a piece of
+          classical at Hampden-Sydney Collage.
+        </p>
+      </div>
+      <div
+        class="container mx-auto flex flex-col sm:flex-row sm:px-60 py-7 justify-center gap-16 sm:gap-3 items-start justify-items-center p-10"
+      >
+        <div class="container">
+          <div class="flex flex-initial gap-6">
+            <img
+              src="img/client1.jpg"
+              class="client-photo max-sm:w-16 max-sm:h-16"
+              alt="Client"
+            />
+            <div class="flex flex-col">
+              <h6 class="font-semibold text-xl sm:text-sm">Diet Expert</h6>
+              <p class="text-lg sm:text-xs">CFO</p>
+            </div>
+          </div>
+          <div
+            class="card-review text-lg sm:text-xs mt-3 sm:mt-5 p-3 text-white bg-navcolor"
+          >
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio laborum a impedit sit, dignissimos aspernatur veritatis
+              iusto officia modi maxime alias totam non nesciunt quam hic est
+              sequi. Illo, eveniet?
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="flex flex-initial gap-6">
+            <img
+              src="img/client2.jpg"
+              class="client-photo max-sm:w-16 max-sm:h-16"
+              alt="Client"
+            />
+            <div class="flex flex-col">
+              <h6 class="font-semibold text-xl sm:text-sm">Cardio Trainer</h6>
+              <p class="text-lg sm:text-xs">CEO</p>
+            </div>
+          </div>
+          <div
+            class="card-review text-lg sm:text-xs mt-3 sm:mt-5 p-3 text-white bg-navcolor"
+          >
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio laborum a impedit sit, dignissimos aspernatur veritatis
+              iusto officia modi maxime alias totam non nesciunt quam hic est
+              sequi. Illo, eveniet?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Review Section End-->
+
+    <!--Contact Section Start-->
+    <section id="contact" class="section-contact">
+      <section class="container mx-auto pt-10 pb-5 flex justify-center">
+        <h1 class="font-black text-2xl text-navcolor">CONTACT US</h1>
+      </section>
+      <div class="m-auto bg-orange p-1 rounded-sm w-16"></div>
+      <div class="flex justify-center pt-6 pb-4">
+        <p
+          class="font-semibold sm:text-sm text-lg text-center text-gray-700 lorem-text max-sm:w-72"
+        >
+          Lorem ipsum is not simpley random text. It has roots in a piece of
+          classical at Hampden-Sydney Collage.
+        </p>
+      </div>
+      <div
+        class="container mx-auto flex flex-col sm:flex-row sm:px-60 py-7 justify-center gap-3 items-start justify-items-center p-10"
+      >
+        <div class="container flex flex-col max-sm:gap-4">
+          <div
+            class="flex flex-initial gap-8 sm:gap-4 font-semibold text-xs text-gray-700"
+          >
+            <div class="w-full text-xl sm:text-base">
+              <h5>Mobile Number</h5>
+              <p>+135 773 321 4442</p>
+            </div>
+            <div class="w-full text-xl sm:text-base">
+              <h5>Email Address</h5>
+              <p>demo@demo.com</p>
+            </div>
+          </div>
+          <div class="mt-3 font-semibold text-md text-gray-700 mb-3">
+            <h5>Make An Appoinment</h5>
+          </div>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="mb-5 bg-homecolor text-gray-900 text-xs block w-full p-1.5"
+            />
+            <input
+              type="text"
+              placeholder="Your Email"
+              class="mb-5 bg-homecolor text-gray-900 text-xs block w-full p-1.5"
+            />
+            <textarea
+              id="message"
+              rows="4"
+              class="block p-1.5 w-full text-xs bg-homecolor text-gray-900 mb-5"
+              placeholder="Your Message"
+            ></textarea>
+          </form>
+        </div>
+        <div class="map max-sm:w-full">
+          <iframe
+            class="max-sm:w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+            width="380"
+            height="299"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Section End-->
+
+    <!--Footer Section Start-->
+    <footer class="bg-navcolor z-10 px-10 sm:px-60 w-full absolute">
+      <div class="logo">
+        <img src="img/logo.png" class="w-48" alt="" />
+      </div>
+
+      <p class="text-lg sm:text-xs p-3 text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut
+        expedita voluptates sequi non assumenda, aliquid nam accusantium
+        eligendi at quidem aspernatur cupiditate animi illo eos, dolore minus
+        quas, consequuntur nulla debitis. Impedit nobis, quisquam maxime natus
+        quia repellendus nam!
+      </p>
+      <div class="container p-4">
+        <!--Grid row-->
+        <div
+          class="row flex flex-initial justify-between sm:justify-center sm:gap-72"
+        >
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-xl sm:text-md text-white mb-3 font-semibold">
+              Information
+            </h5>
+
+            <ul class="list-unstyled text-lg sm:text-sm text-white mt-3">
+              <li class="mb-2">
+                <a href="#home" class="text-body">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#classes" class="text-body">Classes</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-body">Blog</a>
+              </li>
+              <li class="mb-2">
+                <a href="#contact" class="text-body">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-xl sm:text-md text-white mb-3 font-semibold">
+              Helpful Links
+            </h5>
+
+            <ul class="list-unstyled text-lg sm:text-sm text-white mt-3">
+              <li class="mb-2">
+                <a href="#!" class="text-body">Services</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-body">Supports</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-body">Terms & Condition</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-body">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!--Footer Section End-->
+
+    <script src="main.js"></script>
+  </body>
+</html>
